@@ -34,6 +34,15 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: List build output
+        run: |
+          echo "Build completed. Listing dist/ contents:"
+          ls -la dist/
+          echo "Dist size:"
+          du -sh dist/
+          echo "Index.html exists:"
+          test -f dist/index.html && echo "✓ index.html found" || echo "✗ index.html missing"
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
