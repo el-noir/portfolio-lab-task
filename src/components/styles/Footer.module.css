@@ -1,0 +1,24 @@
+.footer {
+  background: var(--card-bg);
+  padding: 2rem;
+  text-align: center;
+  border-top: 1px solid var(--border-color);
+  margin-top: auto;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.text {
+  color: var(--text-color);
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.subtext {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}

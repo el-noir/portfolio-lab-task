@@ -1,0 +1,139 @@
+.aboutSection {
+  min-height: 100vh;
+  padding: 6rem 2rem;
+  background: var(--bg-color);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sectionTitle {
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: var(--text-color);
+  position: relative;
+  display: inline-block;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.sectionTitle::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(135deg, var(--accent-color), var(--primary-color));
+  border-radius: 2px;
+}
+
+.aboutContent {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 4rem;
+}
+
+.backgroundCard, .skillsCard, .interestsCard {
+  background: var(--card-bg);
+  padding: 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  border: 1px solid var(--border-color);
+}
+
+.backgroundCard:hover, .skillsCard:hover, .interestsCard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.backgroundCard h3, .skillsCard h3, .interestsCard h3 {
+  font-size: 1.5rem;
+  color: var(--accent-color);
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.backgroundCard p {
+  color: var(--text-secondary);
+  line-height: 1.8;
+  font-size: 1.05rem;
+}
+
+.skillsList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.skillTag {
+  background: linear-gradient(135deg, var(--accent-color), var(--primary-color));
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 25px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.skillTag:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+}
+
+.interestsList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.interestsList li {
+  color: var(--text-secondary);
+  padding: 0.8rem 0;
+  border-bottom: 1px solid var(--border-color);
+  font-size: 1.05rem;
+  position: relative;
+  padding-left: 2rem;
+  transition: all 0.3s ease;
+}
+
+.interestsList li:last-child {
+  border-bottom: none;
+}
+
+.interestsList li::before {
+  content: '▹';
+  position: absolute;
+  left: 0;
+  color: var(--accent-color);
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.interestsList li:hover {
+  color: var(--accent-color);
+  padding-left: 2.5rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .sectionTitle {
+    font-size: 2.5rem;
+  }
+
+  .aboutContent {
+    grid-template-columns: 1fr;
+  }
+
+  .backgroundCard, .skillsCard, .interestsCard {
+    padding: 2rem;
+  }
+}
