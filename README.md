@@ -1,6 +1,10 @@
-# MyPortfolio+ 🚀
+# MyPortfolio 🚀
+
+[![Deploy Status](https://github.com/el-noir/portfolio-lab-task/actions/workflows/deploy.yml/badge.svg)](https://github.com/el-noir/portfolio-lab-task/actions/workflows/deploy.yml)
 
 A modern, responsive Personal Portfolio Web Application built with ReactJS showcasing your skills, projects, and contact information.
+
+**🌐 Live Demo:** [https://el-noir.github.io/portfolio-lab-task/](https://el-noir.github.io/portfolio-lab-task/)
 
 ## 🌟 Features
 
@@ -214,11 +218,10 @@ The build folder will contain optimized files ready for deployment.
 
 ## 👨‍💻 Author
 
-**Your Name**
-- GitHub: [@yourusername](https://github.com/yourusername)
-- LinkedIn: [Your Name](https://linkedin.com/in/yourusername)
+**Mudasir Shah**
+- GitHub: [@el-noir](https://github.com/yourusername)
 
 ---
 
-Built with ❤️ using React and CSS Modules
+
 
